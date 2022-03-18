@@ -277,9 +277,9 @@ void main()
 							   n=n/16;
 						   }
 						   printf("\nHexadecimal= ");
-						   for ( i=i-1; i>=1; i--)
+						   for ( i=i-1; i>=1; i--) {
 							   printf("%c",hex[i]); 
-						    printf("\n");
+						    } printf("\n");
 					   }
 					   break;
 					  case 6:
