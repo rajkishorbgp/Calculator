@@ -186,7 +186,6 @@ void main()
 				   {
 					    printf("\t--------------Welcome to page:- 2 -----------------\n");
 			            printf("\t__________________Number_system____________________\n");
-			            printf("");
 						printf("\n\t 1. Decimal to Binary\n");
 						printf("\t 2. Binary to Decimal\n");
 						printf("\t 3. Decimal to Octal\n");
@@ -343,7 +342,6 @@ void main()
 	    }
     }while(!(ch==15));	
 }
-
 void byte(float mb){
 	printf("Byte= %.25f b\n",mb*1024*1024);
 }
