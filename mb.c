@@ -10,10 +10,17 @@ void petabyte(float);
 void main()
 {
 	int ch,c;
+	char name[40];  // print name
+    printf("\n\n\n\n\nEnter your Name:- ");
+    fgets(name,40,stdin);
+    printf("Welcome ");
+    puts(name);
+	printf("\tYou are now inside the calculator created by Mr. Raj Kishore.\n\tThis calculator is made by C programming language.");
+	printf("You can do any kind of calculation on this.\n\tPlease choose the correct option and calculate.");
     do
     {    
-		
-		printf("\n\t--------page:- 1--------\n\n");
+		printf("\n\n\t__________________calculator_______________________");
+		printf("\n\t--------------------page:- 1-----------------------\n\n");
 		printf("\t1. Area\n");
 		printf("\t2. Age\n");
 		printf("\t3. BMI\n");
@@ -276,9 +283,9 @@ void main()
 							   n=n/16;
 						   }
 						   printf("\nHexadecimal= ");
-						   for ( i=i-1; i>=1; i--)
+						   for ( i=i-1; i>=1; i--) {
 							   printf("%c",hex[i]); 
-						    printf("\n");
+						    } printf("\n");
 					   }
 					   break;
 					  case 6:
