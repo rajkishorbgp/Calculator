@@ -313,8 +313,46 @@ void main()
 		      break;    
 		 case 10:
 		        {
-		           printf("\t--------------Welcome to page:- 2 -----------------\n");
+		         do
+				 {
+				   printf("\n\t--------------Welcome to page:- 2 -----------------\n");
 				   printf("\t____________________Standard________________________\n");
+				   printf("\t 1. Addition\n");
+				   printf("\t 2. Subtraction\n");
+				   printf("\t 3. Mantiply\n");
+				   printf("\t 4. Divide\n");
+				   printf("\t 5. <<<Goto page 1<<<\n");
+				   printf("\t 6. Exit \n");
+				   float a,b;
+				   printf("\nEnter the choice:-  ");
+                   scanf("%d",&c);
+				   if (c==1||c==2||c==3||c==4)
+				   {
+					   printf("Enter the two number :- ");
+					   scanf("%f%f",&a,&b);
+				   }
+				   switch (c)
+				   {
+				   case 1:
+					        printf("Addition= %.30f",a+b);
+					    break;
+					   case 2:
+	                        printf("Subtraction= %.30f",a-b);
+					    break;
+				   case 3:
+				            printf("Mantiply =%.30f",a*b);
+					    break;
+				   case 4:
+				            printf("Divide =%.30f",a/b);
+				   case 5:
+				        break;
+				   case 6:
+                            exit(0);
+				   default:
+	                        printf("\n\t......invalid input..........\n\tPlease choose the correct option...\n");
+					   break;
+				   }
+				 }while(!(c==5));
 		        }
 		      break;
 	     case 11:
