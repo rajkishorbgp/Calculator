@@ -48,8 +48,61 @@ void main()
 			  break;
          case 2:
 		       {
+				do
+				{
 				  printf("\t--------------Welcome to page:- 2 -----------------\n");
-				  printf("\t_______________________Age_________________________\n");
+				  printf("\t_______________________Age_________________________\n\n");
+				  printf("\n\t1. Calculate Age\n");
+		          printf("\t2. <<<Page-1<<<\n");
+	        	  printf("\t3. Exit\n");
+		          printf("\nEnter the choice:-  ");
+                  scanf("%d",&c);
+				  switch (c)
+				  {
+				  case 1:
+                        {
+							 int d1,d2,m1,m2,y1,y2;
+	                         printf("\n\t__________Enter Date of Birth___________");
+	                         printf("\n\nEnter Day:- ");
+	                         scanf("%d",&d1);
+	                         printf("\nEnter month:- ");
+	                         scanf("%d",&m1);
+	                         printf("\nEnter the year:- ");
+	                         scanf("%d",&y1);
+                             printf("\n\n\t____________Today Date______________");
+                             printf("\nEnter the current day:- ");
+	                         scanf("%d",&d2);
+	                         printf("\nEnter the current month:- ");
+	                         scanf("%d",&m2);
+	                         printf("\nEnter the year:- ");
+	                         scanf("%d",&y2);
+	                         if(d2>=d1) {
+	                            	d2=d2-d1; }
+	                         else {
+	                             	m2--;
+		                            d2= d2+30;
+		                            d2=d2-d1;   }
+                             if(m2>=m1) {
+	                                m2=m2-m1;  }
+                             else  {
+	                               y2--; 
+	                              m2=m2+12;
+	                              m2=m2-m1; }
+                             if("y2>=y1") {
+                                	y2=y2-y1; }
+							printf("\t______sum of Age________\n");
+                            printf("Day= %d\nMonth= %d\nYear= %d\n",d2,m2,y2);
+                        }
+				       break;
+					case 2:
+					   break;
+					case 3:
+					 		exit(0);
+	  			  default:
+     	                    printf("\n\t......invalid input..........\n\tPlease choose the correct option...\n");
+					  break;
+				  }
+				}while(!(c==2));
 			   }
 			  break;
 		 case 3:
@@ -336,7 +389,7 @@ void main()
 				   case 1:
 					        printf("Addition= %.30f",a+b);
 					    break;
-					   case 2:
+					case 2:
 	                        printf("Subtraction= %.30f",a-b);
 					    break;
 				   case 3:
