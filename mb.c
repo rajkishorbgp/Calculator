@@ -91,7 +91,7 @@ void main()
                              if("y2>=y1") {
                                 	y2=y2-y1; }
 							printf("\t______sum of Age________\n");
-                            printf("Day= %d\nMonth= %d\nYear= %d\n",d2,m2,y2);
+                            printf("Day= %d\nMonth= %d\nYear= %d\n",d2,m2,y2); 
                         }
 				       break;
 					case 2:
