@@ -11,10 +11,10 @@ void main()
 {
 	int ch,c;
 	char name[40];  // print name
-    printf("\n\n\n\n\nEnter your Name:- ");
-    fgets(name,40,stdin);
-    printf("Welcome ");
-    puts(name);
+        printf("\n\n\n\n\nEnter your Name:- ");
+        fgets(name,40,stdin);
+        printf("Welcome ");
+        puts(name);
 	printf("\tYou are now inside the calculator created by Mr. Raj Kishore.\n\tThis calculator is made by C programming language.");
 	printf("You can do any kind of calculation on this.\n\tPlease choose the correct option and calculate.");
     do
@@ -37,7 +37,7 @@ void main()
 		printf("\t14. Weight and mass\n");
 		printf("\t15. Exit\n");
 		printf("\nEnter the choice:-  ");
-        scanf("%d",&ch);
+                scanf("%d",&ch);
 		switch (ch)
 		{
 		 case 1:
@@ -46,7 +46,7 @@ void main()
                   printf("\t_______________________Area________________________\n");			
 			   }
 			  break;
-         case 2:
+                  case 2:
 		       {
 				do
 				{
