@@ -11,10 +11,10 @@ void main()
 {
 	int ch,c;
 	char name[40];  // print name
-    printf("\n\n\n\n\nEnter your Name:- ");
-    fgets(name,40,stdin);
-    printf("Welcome ");
-    puts(name);
+        printf("\n\n\n\n\nEnter your Name:- ");
+        fgets(name,40,stdin);
+        printf("Welcome ");
+        puts(name);
 	printf("\tYou are now inside the calculator created by Mr. Raj Kishore.\n\tThis calculator is made by C programming language.");
 	printf("You can do any kind of calculation on this.\n\tPlease choose the correct option and calculate.");
     do
