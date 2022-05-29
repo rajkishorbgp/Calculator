@@ -37,7 +37,7 @@ void main()
 		printf("\t14. Weight and mass\n");
 		printf("\t15. Exit\n");
 		printf("\nEnter the choice:-  ");
-        scanf("%d",&ch);
+                scanf("%d",&ch);
 		switch (ch)
 		{
 		 case 1:
@@ -46,7 +46,7 @@ void main()
                   printf("\t_______________________Area________________________\n");			
 			   }
 			  break;
-         case 2:
+                  case 2:
 		       {
 				do
 				{
